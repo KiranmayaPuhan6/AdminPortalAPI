@@ -1,0 +1,228 @@
+{
+  "Routes": [
+    {
+      "UpstreamPathTemplate": "/api/User",
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT" ],
+
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 10006
+        }
+      ],
+      "DownstreamPathTemplate": "/api/User"
+    },
+    {
+      "UpstreamPathTemplate": "/api/User/forgot-password?email={email}",
+      "UpstreamHttpMethod": [ "POST" ],
+
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 10006
+        }
+      ],
+      "DownstreamPathTemplate": "/api/User/forgot-password?email={email}"
+    },
+
+    {
+      "UpstreamPathTemplate": "/api/User/reset-password",
+      "UpstreamHttpMethod": [ "POST" ],
+
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 10006
+        }
+      ],
+      "DownstreamPathTemplate": "/api/User/reset-password"
+    },
+    {
+      "upstreampathtemplate": "/api/user/id?id={id}",
+      "upstreamhttpmethod": [ "delete", "get" ],
+
+      "downstreamscheme": "http",
+      "downstreamhostandports": [
+        {
+          "host": "localhost",
+          "port": 10006
+        }
+      ],
+      "downstreampathtemplate": "/api/user/id?id={id}"
+    },
+
+    {
+      "UpstreamPathTemplate": "/api/User/Authenticate",
+      "UpstreamHttpMethod": [ "POST" ],
+
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 10006
+        }
+      ],
+      "DownstreamPathTemplate": "/api/User/Authenticate"
+    },
+    {
+      "UpstreamPathTemplate": "/api/User/image?_userName={_userName}",
+      "UpstreamHttpMethod": [ "GET" ],
+
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 10006
+        }
+      ],
+      "DownstreamPathTemplate": "/api/User/image?_userName={_userName}"
+    },
+    {
+      "UpstreamPathTemplate": "/api/user/validate",
+      "UpstreamHttpMethod": [ "get" ],
+
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "host": "localhost",
+          "port": 10006
+        }
+      ],
+      "DownstreamPathTemplate": "/api/user/validate"
+    },
+
+    ////Apllication API
+    {
+      "UpstreamPathTemplate": "/api/Application",
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT" ],
+
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 10005
+        }
+      ],
+      "DownstreamPathTemplate": "/api/Application"
+    },
+
+    {
+      "UpstreamPathTemplate": "/api/Application/id?id={id}",
+      "UpstreamHttpMethod": [ "DELETE", "GET" ],
+
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 10005
+        }
+      ],
+      "DownstreamPathTemplate": "/api/Application/id?id={id}"
+    },
+    {
+      "UpstreamPathTemplate": "/api/Application/userName?userName={userName}",
+      "UpstreamHttpMethod": [ "DELETE"],
+
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 10005
+        }
+      ],
+      "DownstreamPathTemplate": "/api/Application/userName?userName={userName}"
+    },
+    //healthcheck
+    {
+      "UpstreamPathTemplate": "/healthcheck",
+      "UpstreamHttpMethod": [ "GET" ],
+
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5035
+        }
+      ],
+      "DownstreamPathTemplate": "/healthcheck"
+    },
+
+
+    //UserApplicationMapping
+    {
+      "UpstreamPathTemplate": "/api/UserApplicationMapping",
+      "UpstreamHttpMethod": [ "GET", "POST" ],
+
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 10007
+        }
+      ],
+      "DownstreamPathTemplate": "/api/UserApplicationMapping"
+    },
+
+    {
+      "UpstreamPathTemplate": "/api/UserApplicationMapping/id?id={id}",
+      "UpstreamHttpMethod": [ "DELETE", "GET" ],
+
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 10007
+        }
+      ],
+      "DownstreamPathTemplate": "/api/UserApplicationMapping/id?id={id}"
+    },
+    {
+      "UpstreamPathTemplate": "/api/UserApplicationMapping/applicationId?applicationId={applicationId}",
+      "UpstreamHttpMethod": [ "GET" ],
+
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 10007
+        }
+      ],
+      "DownstreamPathTemplate": "/api/UserApplicationMapping/applicationId?applicationId={applicationId}"
+    },
+
+    {
+      "UpstreamPathTemplate": "/api/UserApplicationMapping/userId?userId={userId}",
+      "UpstreamHttpMethod": [ "GET" ],
+
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 10007
+        }
+      ],
+      "DownstreamPathTemplate": "/api/UserApplicationMapping/userId?userId={userId}"
+    },
+
+    {
+      "UpstreamPathTemplate": "/api/UserApplicationMapping?id={id}&_userName={_userName}",
+      "UpstreamHttpMethod": [ "PUT" ],
+
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 10007
+        }
+      ],
+      "DownstreamPathTemplate": "/api/UserApplicationMapping?id={id}&_userName={_userName}"
+    }
+  ],
+  "GlobalConfiguration": {
+
+  }
+
+}

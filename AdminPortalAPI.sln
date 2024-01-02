@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33110.190
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UserAPI", "AdminPortalAPI\UserAPI.csproj", "{E1A29D89-A488-4EA0-8350-ACD487A7DD67}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JwtAuthenticationManager", "JwtAuthenticationManager\JwtAuthenticationManager.csproj", "{AAFFD87C-5462-4A31-AC3E-CDD4C328A937}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApplicationAPI", "ApplocationAPI\ApplicationAPI.csproj", "{3A20AA0F-311F-4603-99A3-7D02611978C8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AdminPortalAPIGateway", "AdminPortalAPIGateway\AdminPortalAPIGateway.csproj", "{08A0C007-4B7D-4399-9F0E-18AD4E461B63}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UserApplicationMappingAPI", "UserApplicationMappingAPI\UserApplicationMappingAPI.csproj", "{385DA5F1-02FA-44E6-8806-06CE05AFC2CA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HealthCheck", "HealthCheck\HealthCheck.csproj", "{01292B3E-1278-478C-B9A4-FFCDD9583FAE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E1A29D89-A488-4EA0-8350-ACD487A7DD67}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E1A29D89-A488-4EA0-8350-ACD487A7DD67}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E1A29D89-A488-4EA0-8350-ACD487A7DD67}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E1A29D89-A488-4EA0-8350-ACD487A7DD67}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AAFFD87C-5462-4A31-AC3E-CDD4C328A937}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AAFFD87C-5462-4A31-AC3E-CDD4C328A937}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AAFFD87C-5462-4A31-AC3E-CDD4C328A937}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AAFFD87C-5462-4A31-AC3E-CDD4C328A937}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3A20AA0F-311F-4603-99A3-7D02611978C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A20AA0F-311F-4603-99A3-7D02611978C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A20AA0F-311F-4603-99A3-7D02611978C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A20AA0F-311F-4603-99A3-7D02611978C8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{08A0C007-4B7D-4399-9F0E-18AD4E461B63}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08A0C007-4B7D-4399-9F0E-18AD4E461B63}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08A0C007-4B7D-4399-9F0E-18AD4E461B63}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08A0C007-4B7D-4399-9F0E-18AD4E461B63}.Release|Any CPU.Build.0 = Release|Any CPU
+		{385DA5F1-02FA-44E6-8806-06CE05AFC2CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{385DA5F1-02FA-44E6-8806-06CE05AFC2CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{385DA5F1-02FA-44E6-8806-06CE05AFC2CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{385DA5F1-02FA-44E6-8806-06CE05AFC2CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{01292B3E-1278-478C-B9A4-FFCDD9583FAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01292B3E-1278-478C-B9A4-FFCDD9583FAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01292B3E-1278-478C-B9A4-FFCDD9583FAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{01292B3E-1278-478C-B9A4-FFCDD9583FAE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DAA38120-8121-4108-8D52-C2A44E804117}
+	EndGlobalSection
+EndGlobal
